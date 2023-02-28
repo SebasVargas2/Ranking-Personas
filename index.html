@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misison</title>
+    <script defer src="main.js"></script>
+    <style>     
+        table { 
+            border-collapse: collapse; 
+            margin: 25px 0; 
+            font-size: 1em; 
+            font-family: sans-serif; 
+            min-width: 450px; 
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 
+        }
+
+        th { 
+            background-color: #398ec7; 
+            color: #ffffff; 
+            text-align: middle; 
+        }
+
+        th, td { 
+            padding: 12px 15px; 
+        }
+
+        tr { 
+            border-bottom: 1px solid #dddddd; 
+        }
+
+        tr:nth-of-type(even) { 
+            background-color: #f3f3f3; 
+        }
+
+        .button {
+            background-color: #8bcfee; /* Green */
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .button1{
+            background-color: white; 
+            color: black; 
+            border: 2px solid #8bcfee;
+        }
+        
+        .button1:hover {
+            background-color: #8bcfee;
+        }   
+
+        div{
+            font-size: 20px;
+        }
+        
+    </style>
+</head> 
+<body>
+    <h1 align="center">RANKING JUGADORES</h1>
+    <button class="button button1" id="primero">Ranking inicial</button>
+    <button class="button button1" id="segundo" disabled>Ranking actualizado</button>
+    <button class="button button1" id="tercero" disabled>Posiciones Inversa</button>
+    <button class="button button1" id="cuarto" disabled>Promedio de puntos</button>
+    <button class="button button1" id="quinto" disabled>Participante superior a 50 puntos</button>
+    <button class="button button1" id="sexto" disabled>Comodin Luis</button>
+    <button class="button button1" id="septimo">Acerca De</button><br><br>
+    <div align="center" id="pantalla"></div>
+</body>
+</html>
